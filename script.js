@@ -1,0 +1,57 @@
+const scriptures = [
+    
+    "I can do all things through him who strengthens me. - Philippians 4:13",
+    "But the fruit of the Spirit is love, joy, peace, forbearance, kindness, goodness, faithfulness, gentleness and self-control. - Galatians 5:22-23",
+    "The Lord is my shepherd; I shall not want. - Psalm 23:1",
+    "Trust in the Lord with all your heart, and do not lean on your own understanding. - Proverbs 3:5",
+    "The Lord is my light and my salvation; whom shall I fear? The Lord is the stronghold of my life; of whom shall I be afraid? - Psalm 27:1",
+    "Come to me, all who labor and are heavy laden, and I will give you rest. - Matthew 11:28",
+    "And we know that in all things God works for the good of those who love him, who have been called according to his purpose. - Romans 8:28",
+    "The Lord is near to all who call on him, to all who call on him in truth. - Psalm 145:18",
+    "I sought the Lord, and he answered me; he delivered me from all my fears. - Psalm 34:4",
+    "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go. - Joshua 1:9",
+    "Cast all your anxiety on him because he cares for you. - 1 Peter 5:7",
+    "For God gave us a spirit not of fear but of power and love and self-control. - 2 Timothy 1:7",
+    "But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint. - Isaiah 40:31",
+    "Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go. - Joshua 1:9",
+    "The Lord will fight for you; you need only to be still. - Exodus 14:14",
+    "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness. - Lamentations 3:22-23",
+    "Rejoice in the Lord always; again I will say, Rejoice. - Philippians 4:4",
+    "The Lord is my strength and my shield; in him my heart trusts, and I am helped; my heart exults, and with my song I give thanks to him. - Psalm 28:7",
+    "In the beginning, God created the heavens and the earth. - Genesis 1:1",
+    "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God. - Ephesians 2:8",
+    "For where two or three are gathered in my name, there am I among them. - Matthew 18:20",
+    "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life. - John 3:16",
+    "I have told you these things, so that in me you may have peace. In this world you will have trouble. But take heart! I have overcome the world. - John 16:33",
+    "And my God will meet all your needs according to the riches of his glory in Christ Jesus. - Philippians 4:19",
+    "Jesus Christ is the same yesterday and today and forever. - Hebrews 13:8",
+    "The name of the Lord is a fortified tower; the righteous run to it and are safe. - Proverbs 18:10",
+    "The Lord is good, a stronghold in the day of trouble; he knows those who take refuge in him. - Nahum 1:7",
+    "Blessed is the man who remains steadfast under trial, for when he has stood the test he will receive the crown of life, which God has promised to those who love him. - James 1:12",
+    "The Lord is my strength and my song; he has become my salvation. - Psalm 118:14",
+    "When I am afraid, I put my trust in you. - Psalm 56:3",
+    "The fear of the Lord is the beginning of knowledge; fools despise wisdom and instruction. - Proverbs 1:7",
+    "For I am convinced that neither death nor life, neither angels nor demons, neither the present nor the future, nor any powers, neither height nor depth, nor anything else in all creation, will be able to separate us from the love of God that is in Christ Jesus our Lord. - Romans 8:38-39",
+    "He heals the brokenhearted and binds up their wounds. - Psalm 147:3",
+    "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. - Philippians 4:6",
+    "Your word is a lamp to my feet and a light to my path. - Psalm 119:105",
+    "Be still, and know that I am God. - Psalm 46:10",
+    "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand. - Isaiah 41:10",
+    "The Lord is my rock, my fortress, and my deliverer; my God is my rock, in whom I take refuge, my shield, and the horn of my salvation, my stronghold. - Psalm 18:2",
+    "I have set the Lord always before me; because he is at my right hand, I shall not be shaken. - Psalm 16:8",
+    "But seek first the kingdom of God and his righteousness, and all these things will be added to you. - Matthew 6:33",
+    "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come. - 2 Corinthians 5:17",
+    "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect. - Romans 12:2",
+    "The Lord bless you and keep you; the Lord make his face shine on you and be gracious to you; the Lord turn his face toward you and give you peace. - Numbers 6:24-26",
+    "Even though I walk through the valley of the shadow of death, I will fear no evil, for you are with me; your rod and your staff, they comfort me. - Psalm 23:4",
+    "So we fix our eyes not on what is seen, but on what is unseen, since what is seen is temporary, but what is unseen is eternal. - 2 Corinthians 4:18",
+    "The righteous cry out, and the Lord hears them; he delivers them from all their troubles. - Psalm 34:17",
+    "Blessed are those who hunger and thirst for righteousness, for they shall be satisfied. - Matthew 5:6",
+    // Eventually this will be placed with a database or an api call.
+];
+
+document.getElementById('generate-btn').addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * scriptures.length);
+    const randomScripture = scriptures[randomIndex];
+    document.getElementById('scripture-display').innerText = randomScripture;
+});
